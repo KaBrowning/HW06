@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Chapter 6: Happy Earwig</title>
+    <link href ="Styles/Main.css" rel="stylesheet"/>
+    <link href="Styles/Request.css" rel="stylesheet"/>
 </head>
 <body>
     <header>
