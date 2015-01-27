@@ -22,20 +22,29 @@
 
             <label class="label">Arrival</label>
             <asp:TextBox ID="txtArrival" runat="server" TextMode="Date"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvArrival" runat="server" ControlToValidate="txtArrival" 
+                Display="Dynamic" Text="*" ErrorMessage="You must enter a date." ForeColor="Red">
+            </asp:RequiredFieldValidator>
             <br />
 
             <label class="label">Departure</label>
             <asp:TextBox ID="txtDeparture" runat="server" TextMode="Date"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvDeparture" runat="server" ControlToValidate="txtDeparture" 
+                Display="Dynamic" Text="*" ErrorMessage="You must enter a date." ForeColor="Red">
+            </asp:RequiredFieldValidator>
             <br />
 
             <label class ="label ">Number of adults</label>
              <asp:DropDownList ID="ddlNumberOfAdults" runat="server">
-                <asp:ListItem Value="1">Select one</asp:ListItem>
-                <asp:ListItem Value="2">1</asp:ListItem>
-                <asp:ListItem Value="3">2</asp:ListItem>
-                <asp:ListItem Value="4">3</asp:ListItem>
-                <asp:ListItem Value="5">4</asp:ListItem>
+                <asp:ListItem Value="0">Select one</asp:ListItem>
+                <asp:ListItem Value="1">1</asp:ListItem>
+                <asp:ListItem Value="2">2</asp:ListItem>
+                <asp:ListItem Value="3">3</asp:ListItem>
+                <asp:ListItem Value="4">4</asp:ListItem>
             </asp:DropDownList>
+            <asp:RequiredFieldValidator ID="rfvNumberOfAdults" runat="server" ControlToValidate="ddlNumberOfAdults" 
+                Display="Dynamic" InitalValue="*" ErrorMessage="You must select an option." ForeColor="Red">
+                </asp:RequiredFieldValidator>
             <br />          
 
             <label class="label">Bed type</label>
@@ -54,23 +63,38 @@
             <h2>Contact information</h2>
             <label class="label">First name</label>
             <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvFirstName" runat="server" ControlToValidate="txtFirstName" 
+                Display="Dynamic" Text="*" ErrorMessage="You must enter a first name." ForeColor="Red" SetFocusOnError="True">
+            </asp:RequiredFieldValidator>
             <br />
             <label class="label">Last name</label>
             <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvLastName" runat="server" ControlToValidate="txtLastName" 
+                Display="Dynamic" Text="*" ErrorMessage="You must enter a last name." ForeColor="Red">
+                </asp:RequiredFieldValidator>
             <br />
             <label class="label">Email address</label>
             <asp:TextBox ID="txtEmailAddress" runat="server" TextMode="Email"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmailAddress" 
+                Display="Dynamic" Text="*" ErrorMessage="You must enter an email address." ForeColor="Red">
+                </asp:RequiredFieldValidator>
             <br />
             <label class="label">Telephone number</label>
             <asp:TextBox ID="txtPhoneNumber" runat="server" TextMode="Phone"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RrfvPhone" runat="server" ControlToValidate="txtPhoneNumber" 
+                Display="Dynamic" Text="*" ErrorMessage="You must enter a phone number." ForeColor="Red">
+                </asp:RequiredFieldValidator>
             <br />
 
             <label class="label">Preferred method</label>
             <asp:DropDownList ID="ddlPreferredMethod" runat="server" Height="16px" Width="99px">
-                <asp:ListItem Value="1">Select one</asp:ListItem>
-                <asp:ListItem Value="2">Email</asp:ListItem>
-                <asp:ListItem Value="3">Telephone</asp:ListItem>
+                <asp:ListItem Value="0">Select one</asp:ListItem>
+                <asp:ListItem Value="1">Email</asp:ListItem>
+                <asp:ListItem Value="2">Telephone</asp:ListItem>
             </asp:DropDownList>
+            <asp:RequiredFieldValidator ID="rfvPreferredMethod" runat="server" ControlToValidate="ddlPreferredMethod" 
+                Display="Dynamic" InitialValue="*" ErrorMessage="You must select an option." ForeColor="Red">
+                </asp:RequiredFieldValidator>
             <br />
 
             <label class="label">&nbsp;</label>
