@@ -72,7 +72,7 @@
             <br />
 
             <label class="label">&nbsp;</label>
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="button" />&nbsp;
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="button" OnClick="btnSubmit_Click" />&nbsp;
             <asp:Button ID="btnClear" runat="server" Text="Clear" CssClass="button" OnClick="btnClear_Click" /><br />
             <p>
                 <asp:Label ID="lblMessage" runat="server"></asp:Label>
