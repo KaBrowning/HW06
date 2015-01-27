@@ -10,14 +10,13 @@
 </head>
 <body>
     <header>
-        <asp:ImageButton ID ="ibtnEarwigMotel" runat="server" AlternateText="The Happy Earwing Motel"
-            ImageUrl="Images/The_Happy_Earwig_Motel.png" ImageAlign="Middle" />
+        <img src="Images/The_Happy_Earwig_Motel.png" alt="The Happy Earwing Motel"/>
         <br/>
         <h1>The Happy Earwig Motel</h1>
         <h2>Our crawl-space now body-free!</h2>
     </header>
     <section>
-        <form id="form1" runat="server">
+        <form id="form1" runat="server" DefaultFocus="txtArrival" DefaultButton="btnSubmit">
             <h1>Reservation Request</h1>
             <h2>Request data</h2>
 
