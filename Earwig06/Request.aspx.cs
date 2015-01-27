@@ -1,13 +1,13 @@
 ﻿
 using System;
-using System.Web.UI.WebControls;
+using System.Web.UI;
 
 /// <summary>
 /// Sets up the page load and button click events for Request.aspx
 /// </summary>
 /// <author>Kathryn Browning</author>
 /// <version>January 27, 2015</version>
-public partial class Request : System.Web.UI.Page
+public partial class Request : Page
 {
 
     /// <summary>
@@ -15,7 +15,7 @@ public partial class Request : System.Web.UI.Page
     /// </summary>
     /// <param name="sender">The source of the event.</param>
     /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
-    protected void Page_Load(object sender, System.EventArgs e)
+    protected void Page_Load(object sender, EventArgs e)
     {
         if (IsPostBack)
         {
