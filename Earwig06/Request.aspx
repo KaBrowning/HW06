@@ -25,19 +25,30 @@
             <br />          
 
             <label class="label">Bed type</label>
+            <asp:RadioButton ID="rdoKingBed" runat="server"
+                             GroupName="BedType" Text="King &nbsp;"/>
+            <asp:RadioButton ID="rdoTwoQueenBeds" runat="server"
+                             GroupName="BedType" Text="Two Queens &nbsp;"/>
+            <asp:RadioButton ID="rdoOneQueenBed" runat="server"
+                             GroupName="BedType" Text="One Queen &nbsp;"/>
             <br />
 
             <h2>Special requests</h2>
+            <asp:TextBox ID="txtSpecialRequests" runat="server" TextMode="MultiLine"></asp:TextBox>
             <br />
        
             <h2>Contact information</h2>
-            <label class="label">First name</label> 
+            <label class="label">First name</label>
+            <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
             <br />
             <label class="label">Last name</label>
+            <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
             <br />
             <label class="label">Email address</label>
+            <asp:TextBox ID="txtEmailAddress" runat="server" TextMode="Email"></asp:TextBox>
             <br />
             <label class="label">Telephone number</label>
+            <asp:TextBox ID="txtPhoneNumber" runat="server" TextMode="Phone"></asp:TextBox>
             <br />
             <label class="label">Preferred method</label>
             <br />
