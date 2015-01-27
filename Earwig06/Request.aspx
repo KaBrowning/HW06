@@ -17,11 +17,32 @@
         <form id="form1" runat="server">
             <h1>Reservation Request</h1>
             <h2>Request data</h2>
+
             <label class="label">Arrival</label> 
+          <asp:DropDownList ID="ddlArrival" runat="server">
+                <asp:ListItem Value="1">1</asp:ListItem>
+                <asp:ListItem Value="2">2</asp:ListItem>
+                <asp:ListItem Value="3">3</asp:ListItem>
+                <asp:ListItem Value="4">4</asp:ListItem>
+            </asp:DropDownList>
             <br />
-            <label class="label">Departure</label>
+
+            <label class="label">Departure</label>      
+            <asp:DropDownList ID="ddlDeparture" runat="server">
+                <asp:ListItem Value="1">1</asp:ListItem>
+                <asp:ListItem Value="2">2</asp:ListItem>
+                <asp:ListItem Value="3">3</asp:ListItem>
+                <asp:ListItem Value="4">4</asp:ListItem>
+            </asp:DropDownList>
             <br />
-            Number of adults
+
+            <label class ="label ">Number of adults</label>
+             <asp:DropDownList ID="ddlNumberOfAdults" runat="server">
+                <asp:ListItem Value="1">1</asp:ListItem>
+                <asp:ListItem Value="2">2</asp:ListItem>
+                <asp:ListItem Value="3">3</asp:ListItem>
+                <asp:ListItem Value="4">4</asp:ListItem>
+            </asp:DropDownList>
             <br />          
 
             <label class="label">Bed type</label>
