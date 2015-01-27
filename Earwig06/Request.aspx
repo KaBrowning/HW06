@@ -30,10 +30,11 @@
 
             <label class ="label ">Number of adults</label>
              <asp:DropDownList ID="ddlNumberOfAdults" runat="server">
-                <asp:ListItem Value="1">1</asp:ListItem>
-                <asp:ListItem Value="2">2</asp:ListItem>
-                <asp:ListItem Value="3">3</asp:ListItem>
-                <asp:ListItem Value="4">4</asp:ListItem>
+                <asp:ListItem Value="1">Select one</asp:ListItem>
+                <asp:ListItem Value="2">1</asp:ListItem>
+                <asp:ListItem Value="3">2</asp:ListItem>
+                <asp:ListItem Value="4">3</asp:ListItem>
+                <asp:ListItem Value="5">4</asp:ListItem>
             </asp:DropDownList>
             <br />          
 
@@ -66,8 +67,9 @@
 
             <label class="label">Preferred method</label>
             <asp:DropDownList ID="ddlPreferredMethod" runat="server" Height="16px" Width="99px">
-                <asp:ListItem Value="1">Email</asp:ListItem>
-                <asp:ListItem Value="2">Telephone</asp:ListItem>
+                <asp:ListItem Value="1">Select one</asp:ListItem>
+                <asp:ListItem Value="2">Email</asp:ListItem>
+                <asp:ListItem Value="3">Telephone</asp:ListItem>
             </asp:DropDownList>
             <br />
 
