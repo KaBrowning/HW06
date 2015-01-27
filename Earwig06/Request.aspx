@@ -18,22 +18,12 @@
             <h1>Reservation Request</h1>
             <h2>Request data</h2>
 
-            <label class="label">Arrival</label> 
-          <asp:DropDownList ID="ddlArrival" runat="server">
-                <asp:ListItem Value="1">1</asp:ListItem>
-                <asp:ListItem Value="2">2</asp:ListItem>
-                <asp:ListItem Value="3">3</asp:ListItem>
-                <asp:ListItem Value="4">4</asp:ListItem>
-            </asp:DropDownList>
+            <label class="label">Arrival</label>
+            <asp:TextBox ID="txtArrival" runat="server" TextMode="Date"></asp:TextBox>
             <br />
 
-            <label class="label">Departure</label>      
-            <asp:DropDownList ID="ddlDeparture" runat="server">
-                <asp:ListItem Value="1">1</asp:ListItem>
-                <asp:ListItem Value="2">2</asp:ListItem>
-                <asp:ListItem Value="3">3</asp:ListItem>
-                <asp:ListItem Value="4">4</asp:ListItem>
-            </asp:DropDownList>
+            <label class="label">Departure</label>
+            <asp:TextBox ID="txtDeparture" runat="server" TextMode="Date"></asp:TextBox>
             <br />
 
             <label class ="label ">Number of adults</label>
