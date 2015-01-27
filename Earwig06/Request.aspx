@@ -10,6 +10,9 @@
 </head>
 <body>
     <header>
+        <asp:ImageButton ID ="ibtnEarwigMotel" runat="server" AlternateText="The Happy Earwing Motel"
+            ImageUrl="Images/The_Happy_Earwig_Motel.png" ImageAlign="Middle" />
+        <br/>
         <h1>The Happy Earwig Motel</h1>
         <h2>Our crawl-space now body-free!</h2>
     </header>
@@ -63,7 +66,7 @@
             <br />
 
             <label class="label">Preferred method</label>
-            <asp:DropDownList ID="ddlPreferredContact" runat="server" Height="16px" Width="99px">
+            <asp:DropDownList ID="ddlPreferredMethod" runat="server" Height="16px" Width="99px">
                 <asp:ListItem Value="1">Email</asp:ListItem>
                 <asp:ListItem Value="2">Telephone</asp:ListItem>
             </asp:DropDownList>
