@@ -2,9 +2,19 @@
 using System;
 using System.Web.UI.WebControls;
 
+/// <summary>
+/// Sets up the page load and button click events for Request.aspx
+/// </summary>
+/// <author>Kathryn Browning</author>
+/// <version>January 27, 2015</version>
 public partial class Request : System.Web.UI.Page
 {
 
+    /// <summary>
+    /// Handles the Load event of the Page control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
     protected void Page_Load(object sender, System.EventArgs e)
     {
         if (IsPostBack)
@@ -14,6 +24,12 @@ public partial class Request : System.Web.UI.Page
         this.txtArrival.Text = DateTime.Now.ToShortDateString();
         this.rdoKingBed.Checked = true;
     }
+
+    /// <summary>
+    /// Handles the Click event of the btnClear control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void btnClear_Click(object sender, EventArgs e)
     {
         this.txtDeparture.Text = string.Empty;
@@ -24,8 +40,13 @@ public partial class Request : System.Web.UI.Page
         this.txtPhoneNumber.Text = string.Empty;
 
         this.rdoKingBed.Checked = true;
-        //if textbox id matches arrival, then set to original arrival, else, clear toString
     }
+
+    /// <summary>
+    /// Handles the Click event of the btnSubmit control.
+    /// </summary>
+    /// <param name="sender">The source of the event.</param>
+    /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void btnSubmit_Click(object sender, EventArgs e)
     {
         this.lblMessage.Text = "Thank you for your request.<br />We will get back to you within 24 hours.";
