@@ -61,7 +61,12 @@
             <label class="label">Telephone number</label>
             <asp:TextBox ID="txtPhoneNumber" runat="server" TextMode="Phone"></asp:TextBox>
             <br />
+
             <label class="label">Preferred method</label>
+            <asp:DropDownList ID="ddlPreferredContact" runat="server" Height="16px" Width="99px">
+                <asp:ListItem Value="1">Email</asp:ListItem>
+                <asp:ListItem Value="2">Telephone</asp:ListItem>
+            </asp:DropDownList>
             <br />
 
             <label class="label">&nbsp;</label>
