@@ -40,6 +40,8 @@ public partial class Request : Page
         this.txtPhoneNumber.Text = string.Empty;
 
         this.rdoKingBed.Checked = true;
+
+        this.lblMessage.Text = "";
     }
 
     /// <summary>

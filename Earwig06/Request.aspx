@@ -45,9 +45,6 @@
                 <asp:ListItem Value="3">3</asp:ListItem>
                 <asp:ListItem Value="4">4</asp:ListItem>
             </asp:DropDownList>
-            <asp:RequiredFieldValidator ID="rfvNumberOfAdults" runat="server" ControlToValidate="ddlNumberOfAdults" 
-                ErrorMessage="You must select an option." InitalValue="Select one" ForeColor="Red">
-                </asp:RequiredFieldValidator>
             <br />          
 
             <label class="label">Bed type</label>
@@ -95,9 +92,6 @@
                 <asp:ListItem Value="1">Email</asp:ListItem>
                 <asp:ListItem Value="2">Telephone</asp:ListItem>
             </asp:DropDownList>
-            <asp:RequiredFieldValidator ID="rfvPreferredMethod" runat="server" ControlToValidate="ddlPreferredMethod" 
-                Display="Dynamic" InitialValue="*" ErrorMessage="You must select an option." ForeColor="Red">
-                </asp:RequiredFieldValidator>
             <br />
 
             <label class="label">&nbsp;</label>
