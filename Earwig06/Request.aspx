@@ -23,21 +23,21 @@
             <h1>Reservation Request</h1>
             <h2>Request data</h2>
 
-            <label class="label">Arrival</label>
+            <label class="label" accesskey="R">Arrival</label>
             <asp:TextBox ID="txtArrival" runat="server" TextMode="Date"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvArrival" runat="server" ControlToValidate="txtArrival" 
                 Display="Dynamic" Text="*" ErrorMessage="You must enter a date." ForeColor="Red">
             </asp:RequiredFieldValidator>
             <br />
 
-            <label class="label">Departure</label>
+            <label class="label" accesskey="U">Departure</label>
             <asp:TextBox ID="txtDeparture" runat="server" TextMode="Date"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvDeparture" runat="server" ControlToValidate="txtDeparture" 
                 Display="Dynamic" Text="*" ErrorMessage="You must enter a date." ForeColor="Red">
             </asp:RequiredFieldValidator>
             <br />
 
-            <label class ="label ">Number of adults</label>
+            <label class ="label" accesskey="N">Number of adults</label>
              <asp:DropDownList ID="ddlNumberOfAdults" runat="server">
                 <asp:ListItem Value="0">Select one</asp:ListItem>
                 <asp:ListItem Value="1">1</asp:ListItem>
@@ -56,37 +56,37 @@
                              GroupName="BedType" Text="One Queen &nbsp;"/>
             <br />
 
-            <h2>Special requests</h2>
+            <h2 accesskey="S">Special requests</h2>
             <asp:TextBox ID="txtSpecialRequests" runat="server" TextMode="MultiLine"></asp:TextBox>
             <br />
        
             <h2>Contact information</h2>
-            <label class="label">First name</label>
+            <label class="label" accesskey="I">First name</label>
             <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvFirstName" runat="server" ControlToValidate="txtFirstName" 
                 Display="Dynamic" Text="*" ErrorMessage="You must enter a first name." ForeColor="Red" SetFocusOnError="True">
             </asp:RequiredFieldValidator>
             <br />
-            <label class="label">Last name</label>
+            <label class="label" accesskey="L">Last name</label>
             <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvLastName" runat="server" ControlToValidate="txtLastName" 
                 Display="Dynamic" Text="*" ErrorMessage="You must enter a last name." ForeColor="Red">
                 </asp:RequiredFieldValidator>
             <br />
-            <label class="label">Email address</label>
+            <label class="label" accesskey="M">Email address</label>
             <asp:TextBox ID="txtEmailAddress" runat="server" TextMode="Email"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmailAddress" 
                 Display="Dynamic" Text="*" ErrorMessage="You must enter an email address." ForeColor="Red">
                 </asp:RequiredFieldValidator>
             <br />
-            <label class="label">Telephone number</label>
+            <label class="label" accesskey="B">Telephone number</label>
             <asp:TextBox ID="txtPhoneNumber" runat="server" TextMode="Phone"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RrfvPhone" runat="server" ControlToValidate="txtPhoneNumber" 
                 Display="Dynamic" Text="*" ErrorMessage="You must enter a phone number." ForeColor="Red">
                 </asp:RequiredFieldValidator>
             <br />
 
-            <label class="label">Preferred method</label>
+            <label class="label" accesskey="P">Preferred method</label>
             <asp:DropDownList ID="ddlPreferredMethod" runat="server" Height="16px" Width="99px">
                 <asp:ListItem Value="0">Select one</asp:ListItem>
                 <asp:ListItem Value="1">Email</asp:ListItem>

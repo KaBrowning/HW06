@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Drawing;
 using System.Web.UI;
 
 /// <summary>
@@ -53,8 +54,12 @@ public partial class Request : Page
     {
         if (this.ddlNumberOfAdults.SelectedIndex < 1 || this.ddlPreferredMethod.SelectedIndex < 1)
         {
-            this.lblMessage.Text = "You must select an option from the drop down list.";
+            this.lblMessage.ForeColor = Color.Red;
+            this.lblMessage.Text = "You must select an option from both drop down lists.";
         }
-        this.lblMessage.Text = "Thank you for your request.<br />We will get back to you within 24 hours.";
+        else
+        {
+            this.lblMessage.Text = "Thank you for your request.<br />We will get back to you within 24 hours.";
+        }
     }
 }
