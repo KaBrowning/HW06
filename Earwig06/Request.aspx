@@ -35,6 +35,10 @@
             <asp:RequiredFieldValidator ID="rfvDeparture" runat="server" ControlToValidate="txtDeparture" 
                 Display="Dynamic" Text="*" ErrorMessage="You must enter a date." ForeColor="Red">
             </asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="refDeparture" runat="server" ControlToValidate="txtDeparture"
+                 ForeColor="Red" ErrorMessage="Enter a valid date. (M/D/YYYY)" Display="Dynamic" SetFocusOnError="True"
+                ValidationExpression="^([1-9]|1[012])[- /.]([1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$">
+                </asp:RegularExpressionValidator>
             <br />
 
             <label class ="label" accesskey="N">Number of adults</label>
