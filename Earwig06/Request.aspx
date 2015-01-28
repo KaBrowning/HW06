@@ -46,7 +46,7 @@
                 <asp:ListItem Value="4">4</asp:ListItem>
             </asp:DropDownList>
             <asp:RequiredFieldValidator ID="rfvNumberOfAdults" runat="server" ControlToValidate="ddlNumberOfAdults" 
-                Display="Dynamic" InitalValue="*" ErrorMessage="You must select an option." ForeColor="Red">
+                ErrorMessage="You must select an option." InitalValue="Select one" ForeColor="Red">
                 </asp:RequiredFieldValidator>
             <br />          
 

@@ -49,6 +49,10 @@ public partial class Request : Page
     /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
     protected void btnSubmit_Click(object sender, EventArgs e)
     {
+        if (this.ddlNumberOfAdults.SelectedIndex < 1 || this.ddlPreferredMethod.SelectedIndex < 1)
+        {
+            this.lblMessage.Text = "You must select an option from the drop down list.";
+        }
         this.lblMessage.Text = "Thank you for your request.<br />We will get back to you within 24 hours.";
     }
 }
