@@ -80,10 +80,14 @@
                 </asp:RequiredFieldValidator>
             <br />
             <label class="label" accesskey="B">Telephone number</label>
-            <asp:TextBox ID="txtPhoneNumber" runat="server" TextMode="Phone"></asp:TextBox>
+            <asp:TextBox ID="txtPhoneNumber" runat="server" TextMode="Phone" MaxLength="12"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RrfvPhone" runat="server" ControlToValidate="txtPhoneNumber" 
-                Display="Dynamic" Text="*" ErrorMessage="You must enter a phone number." ForeColor="Red">
+                 Display="Dynamic" Text="*" ErrorMessage="You must enter a phone number." ForeColor="Red">
                 </asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="revPhone" runat="server" ControlToValidate="txtPhoneNumber" 
+                ErrorMessage="Please enter a valid phone number." ValidationExpression="^([0-9\(\)\-]{10,12})$" 
+                Display="Dynamic" ForeColor="Red">
+                </asp:RegularExpressionValidator>
             <br />
 
             <label class="label" accesskey="P">Preferred method</label>

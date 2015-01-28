@@ -42,6 +42,9 @@ public partial class Request : Page
 
         this.rdoKingBed.Checked = true;
 
+        this.ddlNumberOfAdults.SelectedIndex = 0;
+        this.ddlPreferredMethod.SelectedIndex = 0;
+
         this.lblMessage.Text = "";
     }
 
@@ -61,7 +64,8 @@ public partial class Request : Page
         }
         else
         {
-            this.lblMessage.Text = "Thank you for your request.<br />We will get back to you within 24 hours.";
+            this.lblMessage.ForeColor = Color.Green;
+           this.lblMessage.Text = "Thank you for your request.<br />We will get back to you within 24 hours.";
         }
     }
 }
