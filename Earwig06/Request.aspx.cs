@@ -45,8 +45,10 @@ public partial class Request : Page
         this.lblMessage.Text = "";
     }
 
+
     /// <summary>
-    /// Handles the Click event of the btnSubmit control.
+    /// Handles the Click event of the btnSubmit control. Checks to see if the drop down lists
+    /// have been appropriately selected.
     /// </summary>
     /// <param name="sender">The source of the event.</param>
     /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
