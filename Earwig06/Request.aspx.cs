@@ -34,11 +34,16 @@ public partial class Request : Page
     protected void btnClear_Click(object sender, EventArgs e)
     {
         this.txtDeparture.Text = string.Empty;
+        this.txtDeparture.CausesValidation = false;
         this.txtSpecialRequests.Text = string.Empty;
         this.txtFirstName.Text = string.Empty;
+        this.txtFirstName.CausesValidation = false;
         this.txtLastName.Text = string.Empty;
+        this.txtLastName.CausesValidation = false;
         this.txtEmailAddress.Text = string.Empty;
+        this.txtEmailAddress.CausesValidation = false;
         this.txtPhoneNumber.Text = string.Empty;
+        this.txtPhoneNumber.CausesValidation = false;
 
         this.rdoKingBed.Checked = true;
 
