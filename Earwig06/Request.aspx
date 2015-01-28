@@ -10,7 +10,10 @@
 </head>
 <body>
     <header>
-        <img src="Images/The_Happy_Earwig_Motel.png" alt="The Happy Earwing Motel"/>
+        <asp:Panel ID="imgPanel" runat="server" HorizontalAlign="Center" >
+            <asp:Image ID="imgLogo" runat="server" ImageUrl="Images/The_Happy_Earwig_Motel.png" 
+                AlternateText="The Happy Earwig Motel"/>
+         </asp:Panel>
         <br/>
         <h1>The Happy Earwig Motel</h1>
         <h2>Our crawl-space now body-free!</h2>
